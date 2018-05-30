@@ -1,5 +1,6 @@
-enviar lat y long a un Servicio WS.
-WS devuelve una url(user.string) en codigo qr. Para ubicar el punto rojo en el mapa.
+enviar lat y long en una variable a un Servicio WS, enviar user y qr para que devuelva la ubicacion con un punto rojo en el mapa.
+
+ws es http://72.14.183.67/ws/qr/qr.php, se debe enviar un user(puede ser ingresando en un campo de texto junto con un boton "enviar coordenadas"), las coordenadas en un dato(latitud y longitud) y el qr. devuelve la latitud y longitud ubicadas en el mapa con el punto rojo.
 
 parte2: ingresar usuario y password (enviar) y enviar al WS.
 WS devuelve un ok(sino se mantiene en la misma pagina con un mensaje error) y la app debe redireccionar a la pagina anterior.
@@ -12,4 +13,8 @@ curl -x POST -d 'user=unab' -d 'password' 'http://72.14.183.67/ws/user.php'
 
 
 generar qr en base a sus direcciones lat y long.
----user
+pruebas
+---user: unab
+---pass: unab.,2018
+
+curl -x post -d 'user=unab'-d 'password=unab.,2018' '*'
