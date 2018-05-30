@@ -1,0 +1,15 @@
+enviar lat y long a un Servicio WS.
+WS devuelve una url(user.string) en codigo qr. Para ubicar el punto rojo en el mapa.
+
+parte2: ingresar usuario y password (enviar) y enviar al WS.
+WS devuelve un ok(sino se mantiene en la misma pagina con un mensaje error) y la app debe redireccionar a la pagina anterior.
+
+Esta pagina debe hacer un insert a una bd SQLite que almacene valores de user(id,nombre,pass,estado(si es 1 pasa a la pantalla del mapa sino se mantiene en el login con un mensaje de error)).
+
+http://72.14.183.67/ws/user.php
+-Insertar un user y un password
+curl -x POST -d 'user=unab' -d 'password' 'http://72.14.183.67/ws/user.php'
+
+
+generar qr en base a sus direcciones lat y long.
+---user
